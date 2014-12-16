@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cedar Creek</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<!-- jQueryMobileCSS - styling-->
+		<link rel="stylesheet" href="css/jqeury.mobile.theme.min.css" />
+				
+		<!-- jQueryMobile icons -->
+		<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+		
+		<!-- jQueryMobile core CSS -->
+		<link rel="stylesheet" href="css/jquery.mobile.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.css" />
+        
+		<!-- Owl stylesheet -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		
+		<!-- Owl Theme -->
+		<link rel="stylesheet" href="css/owl.theme.css">
+				
+		<!-- NIGHTLY style -->
+		<link rel="stylesheet" href="css/nightly.css" />
+				
+		<!-- Load Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic|Oswald:400,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Load Font Awesome Icons -->
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		
+		<!-- jQuery -->
+		<script src="js/jquery.min.js"></script>
+		
+		<!-- jQueryMobile -->
+		<script src="js/jquery.mobile.min.js"></script>
+		
+		<!-- Owl Carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/SocialSharing.js"></script>
+        <script src="cordova.js"></script>
+
+    </head>
+    	<body>
+        <div data-role="page" data-theme='a'>
+            <div data-role="panel" data-display="push" id="sidebar" data-theme="a" style="background-color:#281b13; border:none;">
+                <ul data-role="listview">
+                    <li data-icon='false'><a data-ajax="false" href="index.html">Home</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="root.html">Our Roots</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="product.html">Products By <br>Location</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="careers.html">Careers</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="suppliers.html">Suppliers</a></li>
+                   <li data-icon='false'><a data-ajax="false" href="news.html">News</a></li>
+					<li data-icon='false'><a data-ajax="false" href="contact.html">Contact</a></li>
+                </ul>
+            </div> 
+			
+			
+            <div data-role="header" data-tap-toggle="false" data-theme='a' style="background-color:#281b13; position:fixed; top:0; z-index:9000; height:50px; border:none">
+                <a href='#sidebar'data-role="none">
+                	<img src="images/menu-icon.png" alt="sidebar" id="header-menu-icon" style="top:20px" />
+				</a>
+            </div>
+            <div>
+                <img src="images/logo.png" width="100" style="position:fixed; top:20px; right:20px; z-index:1000; width:20%; max-width:100px" />
+			</div>
+            <div data-role="content">
+                <div class="align-center" style="position:relative; top:50px">
+                    <h2>
+                    	Join Our Team
+                    </h2>
+					<div class="row">
+						<div>
+                        	<img class="img-responsive" src="images/2014/10/Premium-Pine-Lexington-Wooden-Swing-Se7.jpg" alt="Premium-Pine-Lexington-Wooden-Swing-Set"/>
+						</div>
+						<div>
+							<h3 style=" text-align:center; padding:5px 0">
+                                	Cedar Creek is always looking for a few good men and women.
+							</h3>
+							<p>
+								We believe that our great people are the key to our company's success. Aggressive growth has created Sales, Operations and General Management opportunities across Cedar Creek's expanding footprint. Consequently, we're looking for the very best people in our industry to help staff and grow our new and existing distribution centers across the country.<br>
+
+								Below is a list of our current positions. If you have any questions regarding careers with Cedar Creek, please feel free to email Anjie Bostic at abostic@cedarcreek.com.<br>
+							</p>
+							
+                            <p>
+								<button type="button" onClick=window.open('http://www.cedarcreek.com/join-our-team/','_system') style="background-color:#281b13; color:#FFF">
+                            		Read More
+	                            </button>
+                            </p>
+						</div>
+					</div>
+                </div>
+			</div>
+			<script type="text/javascript">
+        		$(document).ready(function() {
+					$("#slider").owlCarousel({   
+						slideSpeed : 700,
+						paginationSpeed : 700,
+						rewindSpeed : 1500,
+						singleItem : true,
+						pagination : true,
+						lazyLoad : true,
+						autoPlay : 7000,
+						navigation: true,
+						navigationText: [
+							"<i class='owl-nav-left fa fa-angle-left'></i>",
+							"<i class='owl-nav-right fa fa-angle-right'></i>"
+						]
+					});          
+					$("#gallery").owlCarousel({    
+						slideSpeed : 700,
+						paginationSpeed : 700,
+						rewindSpeed : 1500,
+						singleItem : true,
+						pagination : true,
+						lazyLoad : true,
+						autoPlay : 7000,
+						navigation: true,
+						navigationText: [
+							"<i class='owl-nav-left fa fa-angle-left'></i>",
+							"<i class='owl-nav-right fa fa-angle-right'></i>"
+						]
+					});    
+				});
+        	</script>
+		</div>
+    </body>
+</html>
