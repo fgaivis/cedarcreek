@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Pools &amp; Play</title>
+        <title>Cedar Creek</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
 		<!-- jQueryMobileCSS - styling-->
@@ -66,7 +66,7 @@
             var directionsService = new google.maps.DirectionsService();
             function initialize(lati,longi) { 
                 directionsDisplay = new google.maps.DirectionsRenderer();
-                myLatlng = new google.maps.LatLng(35.144928,-80.743206);  
+                myLatlng = new google.maps.LatLng(29.562518, -98.419698);  
                 myLatlng3 = new google.maps.LatLng(lati, longi); 
                 var mapOptions = { 
                     zoom: 8, 
@@ -144,24 +144,25 @@
     </head>
     	<body>
         <div data-role="page" data-theme='a'>
-            <div data-role="panel" data-display="push" id="sidebar" data-theme="a" style="background-color:#06C; border:none;">
+            <div data-role="panel" data-display="push" id="sidebar" data-theme="a" style="background-color:#281b13; border:none;">
                 <ul data-role="listview">
                     <li data-icon='false'><a data-ajax="false" href="index.html">Home</a></li>
-                    <li data-icon='false' class="menu-item-has-children"><a data-ajax="false" href="swingsets.html">Swingsets&nbsp;<span class="menu-mark">6</span></a>
+                    <li data-icon='false'><a data-ajax="false" href="birthday.html">Our Roots</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="contact.html">Products By <br>Location</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="contact.html">Summit Series</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="contact.html">Careers</a></li>
+                    <li data-icon='false'><a data-ajax="false" href="contact.html">Suppliers</a></li>
+                    <li data-icon='false' class="menu-item-has-children"><a data-ajax="false" href="swingsets.html">News<span class="menu-mark">2</span></a>
                         <ul data-role="listview" class="sub-menu">
-                        	<li data-icon='false'><a href="twwss.html">Williamsburg</a></li>
-                          	<li data-icon='false'><a href="tlwss.html">Lexington</a></li>
-                          	<li data-icon='false'><a href="trwss.html">Ridgefield</a></li>
-                            <li data-icon='false'><a href="tywss.html">Yorktown</a></li>
-                          	<li data-icon='false'><a href="tmwss.html">Manchester</a></li>
-                          	<li data-icon='false'><a href="tpwss.html">Piermont</a></li>
+                        	<li data-icon='false'><a href="twwss.html">Industry News</a></li>
+                          	<li data-icon='false'><a href="tlwss.html">Cedar Creek <br>News</a></li>
                         </ul>
                     </li>
-                    <li data-icon='false'><a data-ajax="false" href="birthday.html">Birthday<br>Parties</a></li>
-                    <li data-icon='false'><a data-ajax="false" href="contact.html">Contact</a></li>
+					<li data-icon='false'><a data-ajax="false" href="contact.html">Contact</a></li>
                 </ul>
-            </div>
-            <div data-role="header" data-tap-toggle="false" data-theme='a' style="background-color:#06C; position:fixed; top:0; z-index:9000; height:50px; border:none">
+            </div> 
+			
+            <div data-role="header" data-tap-toggle="false" data-theme='a' style="background-color:#281b13; position:fixed; top:0; z-index:9000; height:50px; border:none">
                 <a href='#sidebar'data-role="none">
                 	<img src="images/menu-icon.png" alt="sidebar" id="header-menu-icon" style="top:20px" />
 				</a>
@@ -180,38 +181,13 @@
                                     <h2>
                                         CONTACT US
                                     </h2>
-                                    <form action="http://poolsandplay.com/thank-you.php" method="post">
                                         <p>
-                                            <label>
-                                                Name
-                                            </label>
-                                            <input id="name" name="name" class="form-control" required type="text" />
-                                        </p>
-                                        <p>
-                                            <label>
-                                                Email Address
-                                            </label>
-                                            <input id="email" name="email" class="form-control" required type="email" />
-                                        </p>
-                                        <p>
-                                            <label>
-                                                Phone Number
-                                            </label>
-                                            <input id="phone" name="phone" class="form-control" type="tel" />
-                                        </p>
-                                        <p>
-                                            <label>
-                                                Message
-                                            </label>
-                                            <textarea id="message" name="message" class="form-control" required rows="5">
-                                            </textarea>
-                                        </p>
-                                        <p>
-                                            <button class="btn btn-success btn-lg" type="submit" style="background-color:#093; color:#FFF">
-                                                Send
+											<button onclick="window.plugins.socialsharing.shareViaEmail('Please enter your information<br><br>Name:<br><br>Phone:<br><br>Message:','You have a new contact message from your mobile app',['jshalvoy@cedarcreek.com',' abostic@cedarcreek.com',' oms@cgrcreative.com']);" style="background-color:#281b13; color:#FFF">
+                                       
+                                               Mail Us
                                             </button>
                                         </p>
-                                    </form>
+                     
                                 </div>
                             </div>
                         </div>
